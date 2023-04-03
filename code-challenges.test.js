@@ -39,14 +39,19 @@ describe("fib", () => {
 // b) Create the function that makes the test pass.
 
 // Process: GREEN!
+// How to break down a prompt:
+// Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
 
 // PSEUDOCODE:
-// Input: 2 arrays
-// Output: 2 arrays with each number is equal to the sum of the previous two numbers
+// Input: a number greater than 2 ("takes in..")
+// Output: an array that is the same length of given input (6) the values will follow the fib sequence
 
 // Given array outputs (Fibonacci numbers):
 // Input: 6 numbers length
 // Output: [1, 1, 2, 3, 5, 8]
+// index:   0  1  2  3  4  5
+// length:  1  2  3  4  5  6
+// fibonacci sequence will always start with [1, 1]
 
 // Input: 10 numbers length
 // Output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
@@ -69,12 +74,12 @@ const fibLength2 = 10
 const fib = (num) => {
   const fibArray = [1, 1]
   for (let i = 2; i <num; i++) {
-    fibArray[i] = fibArray[i -1] + fibArray[i -2]  
-  }
+    fibArray[i] = fibArray[i -1] + fibArray[i -2] 
+  }   
     return fibArray.slice()
 }
-console.log(fib(fibLength1)) //[1, 1, 2, 3, 5, 8]
-console.log(fib(fibLength2)) //[1,  1,  2,  3,  5, 8, 13, 21, 34, 55]
+// console.log(fib(fibLength1)) //[1, 1, 2, 3, 5, 8]
+// console.log(fib(fibLength2)) //[1,  1,  2,  3,  5, 8, 13, 21, 34, 55]
 
 // PASSED!
 // PASS  ./code-challenges.test.js
