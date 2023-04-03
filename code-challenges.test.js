@@ -41,7 +41,7 @@ describe("fib", () => {
 // Process: GREEN!
 
 // PSEUDOCODE:
-// Input:2 arrays
+// Input: 2 arrays
 // Output: 2 arrays with each number is equal to the sum of the previous two numbers
 
 // Given array outputs (Fibonacci numbers):
@@ -52,11 +52,11 @@ describe("fib", () => {
 // Output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 // Create a function named "fib" that takes in a number in the parameter named "num". 
-// Create an array named "fibArray" that takes the 2 indexes of 1 for each given array output (since index starts at zero you need to take index one to start at the second number value for the fibonacci sequence). 
+// Create an array named "fibArray" that takes the array 2 indexes of 1 for each given array output (since index starts at zero you need to take index one to start at the second number value for the fibonacci sequence). 
 // For the number values of the index to be greater than 2 and equal to the two previous numbers, create a for loop to let the index equal two index elements for each index number in the array.
 // Set an fibArray index element minus 1 (to get the last previous element in the array).
 // Set a fibArray index element minus 2 (to get the second to last previous element in the array).
-// Use the math logic for the sum of two index elements added together to equal the next index and therefore that index will be equal to the sum of the previous two elements.
+// Use math logic for the sum of two index elements added together to equal the next index and therefore that index will be equal to the sum of the previous two elements.
 // Use the .slice() method to return each element value as a new array without changing the original array length.
 // Return array containing the numbers of the Fibonacci sequence (***sequence follows the rule that each number is equal to the sum of the next two numbers*** -----> https://en.wikipedia.org/wiki/Fibonacci_sequence <-----).
 
@@ -129,7 +129,7 @@ describe("myObj", () => {
 
 // Create a function named "myObj" that takes in an object from the given functions.
 // Create a function named "values" to use the Object.values() static method to extract the object values (numbers) for each object.
-// Use the .sort() method to sort the values together with a compare function of two values (a, b) to define the sort order in ascending order.
+// Use the .sort() method to sort the values together with a compare function of two values ((a, b) => a-b) represented by "a" and "b" to define the sort order in ascending order.
 // Return an array of the values sorted from least to greatest.
 
 const studyMinutesWeek1 = {
@@ -202,7 +202,7 @@ describe("accounting", () => {
 // Process: GREEN!
 
 // PSEUDOCODE:
-// Input: 1 array
+// Input: 3 arrays
 // Output: An array of the accumulating sum. An empty array should return an empty array.
 
 // Given outputs:
@@ -218,7 +218,7 @@ describe("accounting", () => {
 // Create a function named "accounting" that takes in an array with a parameter named "arraySum".
 // Create a variable named "sum" to let the sum equal zero index(starting point).
 // Return an array of the accumulating sum by using high order function .map() method to iterate over each element in the array and keep the original array length.
-// Use a anonymous function syntax to invoke the index of zero to accumulate each number and equal the given output by taking the zero index value and using math to take the sum of the next index value to equal a new sum(new index value) and it will use the math logic for each previous index sum in the array.
+// Use a anonymous function syntax to invoke the index of zero to accumulate each number and to equal the given output by taking the zero index value and using math logic to take the sum of the next index value to equal a new sum(new index value) and it will use the math logic for each previous index sum in the array.
 // An empty array should return an empty array.
 
 const accountTransactions1 = [100, -17, -23, -9]
