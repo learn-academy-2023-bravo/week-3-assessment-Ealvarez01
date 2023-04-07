@@ -64,23 +64,31 @@
         }
         // No need to change anything ABOVE this line ^
 
-        return (
+        return(
+          // For the return: Needed to add open <> and closed </> react fragments underneath the return and before the return closes since there are multiple tags.
+          // For the drawCard onClick: Needed to add the function name "drawCard" into the state variable to call on the drawCard function to pass in the values when clicked.
+          // For the onClick shuffle button: Needed to correct the "c" and change to the camelCase naming convention to equal a capital "C". 
+          <> 
           <h1>Draw a Card</h1>
-          <button onClick={}>
-            Click to Draw a Card
-          </button>
-          <button onclick={shuffle}>
-            Return Cards and Shuffle Deck
-          </button>
+            <button onClick={drawCard}>
+              Click to Draw a Card
+            </button>
+            
+            <button onClick={shuffle}>
+              Return Cards and Shuffle Deck
+            </button>
+          
           <div style={handStyles}>
             {hand.map((card, index) => {
               return (
-                <div style={cardStyles} key={index}>
-                  {card}
+                
+          <div style={cardStyles} key={index}>
+            {card}
                 </div>
               )
             })}
           </div>
+          </>
         )
       }
 
